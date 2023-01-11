@@ -6,16 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Odin Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="wrapper">
         <div class="sidebar">
-            <div class="logo"></div>
-            <div class="nav"></div>
-            <div class="support"></div>
+            <div class="logo">DASHBOARD</div>
+            <div class="nav">
+                <div class="nav-link">Home</div>
+                <div class="nav-link">Profile</div>
+                <div class="nav-link">Messages</div>
+                <div class="nav-link">History</div>
+                <div class="nav-link">Tasks</div>
+                <div class="nav-link">Community</div>
+            </div>
+            <div class="support">
+                <div class="nav-link">Settings</div>
+                <div class="nav-link">Support</div>
+                <div class="nav-link">Privacy</div>
+                
+            </div>
         </div>
-        <div class="header"></div>
-        <div class="content"></div>
+        <div class="header">
+            <div class="searchdiv">
+                <img src="magnify.png" class="searchicon">
+                <input type="text" class="searchinput" id="searchinput">
+                <img src="bell-alert-outline.png" class="searchalerticon">
+                <img src="icons8-user-100.png" class="usericonsml">
+                <p>Leeroy Jenkins</p>
+            </div>
+            <div class="userdiv">
+                <img src="icons8-user-100.png" class="usericon lrg">
+                <div class="namegreet">
+                    <p>Hello there,</p>
+                    <h2>Leeroy Jenkins (@leeeeeeeerroooyy)</h2>
+                </div>
+                <div class="controls">
+                    <button class="new btn">New</button>
+                    <button class="upload btn">Upload</button>
+                    <button class="share btn">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="projects">
+                <p>Your Projects</p>
+                <div class="prowrap">
+                    <div class="procard"></div>
+                    <div class="procard"></div>
+                    <div class="procard"></div>
+                    <div class="procard"></div>
+                    <div class="procard"></div>
+                    <div class="procard"></div>
+                    <div class="procard"></div>    
+                </div>
+            </div>
+            <div class="announcments">
+                <p>Announcments</p>
+                <div id="announcecard"></div>
+            </div>
+            <div class="trending">
+                <p>Trending</p>
+                <div id="trendcard"></div>
+            </div>
+        </div>
     </div>
 
     
